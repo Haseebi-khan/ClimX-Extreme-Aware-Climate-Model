@@ -104,10 +104,19 @@ northern land about 0.1 K less than the others at equal global warming (aerosols
 - Regional aerosol terms (SO2 or BC emission maps smoothed over 700-3000 km, linear or log) lower the offset
   for SSP3-7.0 by about 15 % and raise it for SSP1-2.6 (`scripts/offset_study.py`). Not adopted.
 
+## 2026-11-11 — First leaderboard scores
+
+| file | held out SSP1-2.6 | held out SSP3-7.0 | mean | leaderboard (SSP2-4.5) |
+|---|---|---|---|---|
+| `v0_h0.3_n200.parquet` | 0.036 | 0.167 | 0.102 | 0.0975 |
+| `v1_shift_h0.5_n200.parquet` | 0.041 | 0.174 | 0.107 | 0.1012 |
+
+- The leaderboard score is about 0.005 below the mean of the two bracketing held-out scores, for both files.
+- Validation orders the two emulators correctly: v1 - v0 is +0.006 in validation and +0.004 on the leaderboard.
+- 0.1012 is rank 33 of 188. Leader 0.1246, second 0.1098, 14 teams between 0.105 and 0.110.
+
 ## Open
 
-- Nothing has been submitted yet (2026-11-11). `submissions/v0_h0.3_n200.parquet` and
-  `submissions/v1_shift_h0.5_n200.parquet` are ready, so the relation between validation and leaderboard is
-  still unknown.
+- Closing the gap to the 0.105-0.110 group and to the leader (0.1246).
 - Licence of this repository (MIT or Apache-2.0 is required for prize eligibility): to be chosen by the team.
 - A writer for the daily fields of the realisations, for the reproducibility check.
