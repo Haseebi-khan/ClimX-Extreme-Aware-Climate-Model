@@ -1,0 +1,18 @@
+# data, caches, downloaded material and secrets stay out of git
+data/
+work/
+external/
+submissions/*.parquet
+submissions/*.csv
+*.pt
+*.npy
+*.npz
+*.nc
+*.zarr
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.env
+kaggle.json
+access_token
